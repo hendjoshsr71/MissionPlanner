@@ -21,14 +21,17 @@ namespace GDAL
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-        static List<GeoBitmap> _cache = new List<GeoBitmap>();
-
         static GDAL()
         {
+            // seed the assembly load
+            new MissionPlanner.Drawing.Common.Common();
+
             log.InfoFormat("GDAL static ctor");
             //GdalConfiguration.ConfigureGdal();
             Gdal.AllRegister();
         }
+
+        static List<GeoBitmap> _cache = new List<GeoBitmap>();
 
         public delegate void Progress(double percent, string message);
 

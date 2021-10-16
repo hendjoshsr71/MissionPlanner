@@ -40,13 +40,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
-    <Reference Include="mscorlib" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions.cs" />
@@ -76,7 +70,7 @@
       <Name>Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\MissionPlanner.Drawing.Common\MissionPlanner.Drawing.Common.csproj">
-      <Project>{9c263135-ffea-4e6d-87d9-071182f519b8}</Project>
+      <Project>{9742006a-7adf-4baa-929f-a148ac85e45a}</Project>
       <Name>MissionPlanner.Drawing.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\System.Drawing.android\System.Drawing.android.csproj">
